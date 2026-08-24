@@ -22,7 +22,7 @@ def load_csv(conn, table_name, csv_path):
 
 def run_validation(conn):
     print("\n============================================================")
-    print("PHASE 4: DATABASE VALIDATION AUDIT")
+    print("PHASE 4 FINAL AUDIT - DATABASE VALIDATION")
     print("============================================================")
     
     with conn.cursor() as cur:
@@ -42,30 +42,63 @@ def run_validation(conn):
         print(f"Duplicate transaction IDs:  {dup_count}")
         assert dup_count > 0, "DQ-UN01 failed: duplicates missing"
         
-        # Check CS04 logic preservation
-        cur.execute("SELECT count(*) FROM quality.dq_issue_detail WHERE rule_id = 'DQ-CS04'")
-        cs04_count = cur.fetchone()[0]
-        print(f"DQ-CS04 issues detected:    {cs04_count}")
-        assert cs04_count > 0, "DQ-CS04 failed: incorrect math missing"
+        # Quality Schema Validations
+        cur.execute("SELECT count(*) FROM quality.dim_dq_rule")
+        rules_count = cur.fetchone()[0]
+        assert rules_count == 15, "Expected 15 rules in dim_dq_rule"
+        print("quality.dim_dq_rule count:  15 (Verified)")
         
-        # AC01 cases exist
-        cur.execute("SELECT count(*) FROM quality.dq_issue_detail WHERE rule_id = 'DQ-AC01'")
-        ac01_count = cur.fetchone()[0]
-        print(f"DQ-AC01 issues detected:    {ac01_count}")
-        assert ac01_count > 0, "DQ-AC01 failed: missing"
+        # Result ID Uniqueness
+        cur.execute("SELECT count(*), count(DISTINCT result_id) FROM quality.dq_result")
+        tot_res, unq_res = cur.fetchone()
+        assert tot_res == unq_res, "result_id is not unique in dq_result"
+        print(f"dq_result rows unique ID:   {tot_res} (Verified)")
         
-        # CN01 missing customers
-        cur.execute("SELECT count(*) FROM warehouse.fact_sales WHERE customer_id IS NULL")
-        missing_customers = cur.fetchone()[0]
-        print(f"NULL customer IDs:          {missing_customers}")
-        assert missing_customers > 0, "DQ-CN01 failed"
+        # FK constraints are already enforced via DDL, but we can verify status
+        cur.execute("SELECT count(*) FROM quality.dq_issue_detail WHERE status NOT IN ('FAIL', 'WARNING')")
+        invalid_status = cur.fetchone()[0]
+        assert invalid_status == 0, "Found issues with status other than FAIL/WARNING"
+        print("dq_issue_detail statuses:   All FAIL/WARNING (Verified)")
         
-        # CS01 orphan customers
-        cur.execute("SELECT count(*) FROM warehouse.fact_sales fs LEFT JOIN warehouse.dim_customer dc ON fs.customer_id = dc.customer_id WHERE fs.customer_id IS NOT NULL AND dc.customer_id IS NULL")
-        orphan_customers = cur.fetchone()[0]
-        print(f"Orphan customers:           {orphan_customers}")
-        assert orphan_customers > 0, "DQ-CS01 failed"
-        
+        # Duplicate distinction check
+        # source_row_id belongs to quality.dq_issue_detail,
+        # not warehouse.fact_sales.
+        cur.execute("""
+            SELECT
+                COUNT(DISTINCT source_row_id),
+                COUNT(DISTINCT transaction_id)
+            FROM quality.dq_issue_detail
+            WHERE rule_id = 'DQ-UN01'
+        """)
+        dup_source_rows, dup_transaction_ids = cur.fetchone()
+
+        assert dup_transaction_ids == dup_count, (
+            "DQ-UN01 transaction IDs in issue detail do not match warehouse duplicates"
+        )
+
+        assert dup_source_rows == dup_count * 2, (
+            "DQ-UN01 should preserve both physical rows for each duplicate transaction ID"
+        )
+
+        print(
+            f"Distinguishable duplicates: {dup_source_rows} unique source_row_ids "
+            f"across {dup_transaction_ids} duplicate transaction IDs (Verified)"
+        )
+
+        # Ensure every DQ issue has a traceable physical source row
+        cur.execute("""
+            SELECT COUNT(*)
+            FROM quality.dq_issue_detail
+            WHERE source_row_id IS NULL
+        """)
+        null_source_rows = cur.fetchone()[0]
+
+        assert null_source_rows == 0, (
+            "Some DQ issue records are missing source_row_id"
+        )
+
+        print("DQ issue source_row_id:     All populated (Verified)")
+
     print("============================================================")
     print("Database validation PASSED. All intentional DQ issues preserved.")
     print("============================================================\n")

@@ -1,4 +1,6 @@
--- Quality tables based on Phase 3 outputs.
+DROP TABLE IF EXISTS quality.dq_issue_detail CASCADE;
+DROP TABLE IF EXISTS quality.dq_result CASCADE;
+DROP TABLE IF EXISTS quality.dim_dq_rule CASCADE;
 
 CREATE TABLE quality.dim_dq_rule (
     rule_id TEXT PRIMARY KEY,
@@ -28,7 +30,7 @@ INSERT INTO quality.dim_dq_rule (rule_id, rule_name, dimension, severity, descri
 ('DQ-AC03', 'Out-of-period Date', 'Accuracy', 'Critical', 'Transaction date outside 2025', 'fact_sales', 'transaction_date');
 
 CREATE TABLE quality.dq_result (
-    result_id TEXT,
+    result_id TEXT PRIMARY KEY,
     rule_id TEXT REFERENCES quality.dim_dq_rule(rule_id),
     result_date TIMESTAMP,
     dimension TEXT,
@@ -43,8 +45,8 @@ CREATE TABLE quality.dq_result (
 );
 
 CREATE TABLE quality.dq_issue_detail (
-    issue_id TEXT,
-    result_id TEXT,
+    issue_id TEXT PRIMARY KEY,
+    result_id TEXT REFERENCES quality.dq_result(result_id),
     source_row_id INTEGER,
     transaction_id TEXT,
     rule_id TEXT REFERENCES quality.dim_dq_rule(rule_id),
