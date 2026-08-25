@@ -3,7 +3,7 @@ import time
 import psycopg2
 from psycopg2 import sql
 
-DB_URI = "postgresql://admin:password@localhost:15432/nusantara_retail"
+DB_URL = os.getenv("DATABASE_URL")
 
 def run_sql_file(conn, filepath):
     print(f"Executing {filepath}...")
