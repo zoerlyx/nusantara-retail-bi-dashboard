@@ -14,3 +14,5 @@ services:
 
 volumes:
   pgdata:
+    external: true
+    name: optimistic-hopper_pgdata
