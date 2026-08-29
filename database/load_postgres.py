@@ -2,8 +2,10 @@ import os
 import time
 import psycopg2
 from psycopg2 import sql
+from dotenv import load_dotenv
 
-DB_URL = os.getenv("DATABASE_URL")
+load_dotenv()
+DB_URI = os.getenv("DB_URI")
 
 def run_sql_file(conn, filepath):
     print(f"Executing {filepath}...")
