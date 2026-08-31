@@ -36,6 +36,21 @@ into a single BI workflow.
 
 **Business Period:** January–December 2025
 
+#### Dashboard Overview
+![Dashboard Overview](powerbi/screenshots/screenshots-1.png)
+
+#### Data Health
+![Data Health](powerbi/screenshots/screenshots-2.png)
+
+#### Data Quality Monitoring
+![Data Quality Monitoring](powerbi/screenshots/screenshots-3.png)
+
+#### Business Analysis
+![Business Analysis](powerbi/screenshots/screenshots-4.png)
+
+#### Issue Details
+![Issue Details](powerbi/screenshots/screenshots-5.png)
+
 ---
 
 ## 2. Key Capabilities
