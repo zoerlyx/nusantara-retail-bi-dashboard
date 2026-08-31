@@ -1,5 +1,10 @@
 # Nusantara Retail — Data Quality & Business Monitoring Dashboard
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Faker](https://img.shields.io/badge/Faker-Data%20Generation-6C5CE7?style=flat-square)
+
 > An end-to-end Business Intelligence solution that monitors retail business performance while measuring the reliability of the data used to report it.
 
 ## 1. Project Overview
@@ -577,3 +582,14 @@ Decision
 ```
 
 The goal is not only to produce business numbers, but to provide the context required to understand how trustworthy those numbers are.
+
+## 18. Author
+
+**Fardho Z.**  
+Data Analyst | BI Engineer
+
+---
+
+<p align="center">
+  © 2026 Fardho Z.
+</p>
