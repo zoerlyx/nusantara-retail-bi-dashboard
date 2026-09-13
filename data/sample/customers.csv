@@ -1,0 +1,51 @@
+customer_id,customer_name,gender,age_group,city,region_id,customer_segment,registration_date
+CUS00001,Dewi Purnama,Male,45-54,Salatiga,REG004,Loyal,2020-03-02
+CUS00002,Fitri Susanto,Female,45-54,Pematangsiantar,REG001,New,2022-10-02
+CUS00003,Putri Santoso,Female,45-54,Jakarta Barat,REG002,New,2022-06-26
+CUS00004,Nadia Nugroho,Female,25-34,Medan,REG001,Loyal,2024-07-03
+CUS00005,Sari Wijaya,Female,25-34,Balikpapan,REG006,Regular,2023-11-05
+CUS00006,Hana Santoso,Female,25-34,Solo,REG004,Regular,2022-12-10
+CUS00007,Tono Saputra,Female,55+,Solo,REG004,Loyal,2022-08-09
+CUS00008,Nadia Wijaya,Female,55+,Kutai Kartanegara,REG006,Regular,2023-10-17
+CUS00009,Wahyu Saputra,Female,55+,Gianyar,REG008,Loyal,2022-08-01
+CUS00010,Made Rahayu,Male,25-34,Salatiga,REG004,New,2021-09-22
+CUS00011,Dewi Prasetyo,Male,55+,Balikpapan,REG006,New,2022-10-22
+CUS00012,Nadia Santoso,Male,55+,Denpasar,REG008,Loyal,2024-02-16
+CUS00013,Iman Utama,Male,35-44,Palopo,REG007,Loyal,2024-07-22
+CUS00014,Lestari Hidayat,Male,25-34,Surabaya,REG005,New,2020-06-23
+CUS00015,Kartini Setiawan,Female,35-44,Medan,REG001,New,2023-09-30
+CUS00016,Omar Purnama,Female,45-54,Malang,REG005,Regular,2020-05-09
+CUS00017,Xenia Utama,Female,55+,Cimahi,REG003,Loyal,2024-09-21
+CUS00018,Siti Wibowo,Male,35-44,Bekasi,REG003,Regular,2022-02-02
+CUS00019,Sari Handoko,Female,45-54,Medan,REG001,Loyal,2021-12-14
+CUS00020,Made Kusuma,Male,18-24,Parepare,REG007,New,2024-04-22
+CUS00021,Nadia Wijaya,Male,55+,Jakarta Barat,REG002,Loyal,2020-07-24
+CUS00022,Iman Prasetyo,Male,45-54,Malang,REG005,Regular,2024-06-27
+CUS00023,Budi Susanto,Female,25-34,Salatiga,REG004,Regular,2024-03-25
+CUS00024,Made Wibowo,Male,55+,Binjai,REG001,Regular,2023-05-06
+CUS00025,Sari Wijaya,Female,25-34,Gianyar,REG008,New,2024-09-19
+CUS00026,Vina Wibowo,Male,35-44,Magelang,REG004,Regular,2023-12-14
+CUS00027,Omar Hidayat,Female,35-44,Yogyakarta,REG004,Regular,2020-11-24
+CUS00028,Iman Hartono,Male,45-54,Badung,REG008,Loyal,2022-07-05
+CUS00029,Gunawan Handoko,Female,55+,Samarinda,REG006,Regular,2021-08-08
+CUS00030,Eko Prasetyo,Male,35-44,Bogor,REG003,Regular,2020-08-09
+CUS00031,Hana Handoko,Female,45-54,Tebing Tinggi,REG001,Loyal,2021-05-13
+CUS00032,Made Prasetyo,Male,55+,Magelang,REG004,New,2022-03-27
+CUS00033,Vina Wijaya,Female,18-24,Jakarta Timur,REG002,Loyal,2020-04-24
+CUS00034,Iman Handoko,Male,18-24,Yogyakarta,REG004,New,2021-12-16
+CUS00035,Joko Saputra,Female,45-54,Tabanan,REG008,New,2023-01-02
+CUS00036,Zahra Susanto,Male,35-44,Depok,REG003,Regular,2020-12-15
+CUS00037,Putri Handoko,Male,25-34,Makassar,REG007,Loyal,2021-03-12
+CUS00038,Kartini Hartono,Male,45-54,Blitar,REG005,Regular,2024-07-17
+CUS00039,Udin Santoso,Female,45-54,Cimahi,REG003,Loyal,2024-11-11
+CUS00040,Gunawan Purnama,Female,35-44,Surabaya,REG005,Loyal,2021-09-22
+CUS00041,Iman Saputra,Male,45-54,Solo,REG004,Regular,2021-12-17
+CUS00042,Zahra Santoso,Male,25-34,Depok,REG003,Regular,2024-11-17
+CUS00043,Tono Hidayat,Female,18-24,Solo,REG004,New,2023-10-22
+CUS00044,Made Suharto,Female,18-24,Gianyar,REG008,Loyal,2020-07-10
+CUS00045,Gunawan Susanto,Male,35-44,Magelang,REG004,Regular,2022-07-31
+CUS00046,Yuni Kusuma,Female,18-24,Makassar,REG007,Regular,2023-01-29
+CUS00047,Siti Saputra,Female,25-34,Tabanan,REG008,Loyal,2023-04-20
+CUS00048,Nadia Rahayu,Female,18-24,Jakarta Timur,REG002,New,2022-03-03
+CUS00049,Dewi Rahayu,Female,55+,Palopo,REG007,New,2024-10-25
+CUS00050,Omar Nugroho,Male,18-24,Tabanan,REG008,Regular,2020-05-04

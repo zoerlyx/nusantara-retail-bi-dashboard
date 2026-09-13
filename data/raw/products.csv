@@ -1,0 +1,501 @@
+product_id,product_name,category,subcategory,brand,unit_cost,list_price
+PRD00001,Lenovo Smartphones 0001,Electronics,Smartphones,Lenovo,3975915.72,5645402.73
+PRD00002,ASUS Accessories 0002,Electronics,Accessories,ASUS,7516735.17,9004297.06
+PRD00003,Apple Accessories 0003,Electronics,Accessories,Apple,6899513.14,9452333.0
+PRD00004,ASUS Accessories 0004,Electronics,Accessories,ASUS,4751486.81,6844516.75
+PRD00005,Xiaomi Laptops 0005,Electronics,Laptops,Xiaomi,3866209.6,4877610.03
+PRD00006,Samsung Laptops 0006,Electronics,Laptops,Samsung,3329981.16,4429873.94
+PRD00007,Apple Audio 0007,Electronics,Audio,Apple,4368284.46,5677459.31
+PRD00008,Samsung Smartphones 0008,Electronics,Smartphones,Samsung,6461861.13,7528714.4
+PRD00009,Xiaomi Laptops 0009,Electronics,Laptops,Xiaomi,4566651.4,5833440.5
+PRD00010,Samsung Audio 0010,Electronics,Audio,Samsung,4844207.99,6844381.47
+PRD00011,Apple Smartphones 0011,Electronics,Smartphones,Apple,1567773.24,2289262.49
+PRD00012,Apple Audio 0012,Electronics,Audio,Apple,5550963.13,7287859.49
+PRD00013,Xiaomi Audio 0013,Electronics,Audio,Xiaomi,3669401.6,5615652.21
+PRD00014,Lenovo Audio 0014,Electronics,Audio,Lenovo,1816964.54,2263756.12
+PRD00015,Apple Laptops 0015,Electronics,Laptops,Apple,2970145.81,3686247.96
+PRD00016,ASUS Accessories 0016,Electronics,Accessories,ASUS,5682924.49,6814963.05
+PRD00017,Samsung Audio 0017,Electronics,Audio,Samsung,1997183.46,2568377.93
+PRD00018,Samsung Smartphones 0018,Electronics,Smartphones,Samsung,565724.54,669195.56
+PRD00019,ASUS Audio 0019,Electronics,Audio,ASUS,2063097.66,2536784.88
+PRD00020,Samsung Smartphones 0020,Electronics,Smartphones,Samsung,2228943.72,2690335.07
+PRD00021,Lenovo Accessories 0021,Electronics,Accessories,Lenovo,6877932.32,9622227.32
+PRD00022,Xiaomi Laptops 0022,Electronics,Laptops,Xiaomi,6278374.74,7253406.34
+PRD00023,Samsung Accessories 0023,Electronics,Accessories,Samsung,2333512.94,3011165.1
+PRD00024,Xiaomi Accessories 0024,Electronics,Accessories,Xiaomi,1842335.02,2734025.17
+PRD00025,Apple Smartphones 0025,Electronics,Smartphones,Apple,1345422.7,1558537.66
+PRD00026,Lenovo Audio 0026,Electronics,Audio,Lenovo,7673066.01,10792934.65
+PRD00027,Samsung Smartphones 0027,Electronics,Smartphones,Samsung,7133806.53,10681448.52
+PRD00028,Xiaomi Audio 0028,Electronics,Audio,Xiaomi,7261770.66,8809253.99
+PRD00029,Apple Audio 0029,Electronics,Audio,Apple,3632324.31,5151362.34
+PRD00030,ASUS Accessories 0030,Electronics,Accessories,ASUS,3223754.86,4813388.38
+PRD00031,Samsung Accessories 0031,Electronics,Accessories,Samsung,2708603.4,3428008.46
+PRD00032,Samsung Laptops 0032,Electronics,Laptops,Samsung,3467897.53,4899098.84
+PRD00033,ASUS Accessories 0033,Electronics,Accessories,ASUS,3663707.2,4370069.95
+PRD00034,Samsung Smartphones 0034,Electronics,Smartphones,Samsung,6581081.78,8952903.65
+PRD00035,Lenovo Accessories 0035,Electronics,Accessories,Lenovo,2696913.16,3190987.65
+PRD00036,Xiaomi Accessories 0036,Electronics,Accessories,Xiaomi,4558909.57,5416440.46
+PRD00037,Samsung Laptops 0037,Electronics,Laptops,Samsung,5086716.21,6802974.26
+PRD00038,Samsung Laptops 0038,Electronics,Laptops,Samsung,1338152.98,1632279.01
+PRD00039,Xiaomi Accessories 0039,Electronics,Accessories,Xiaomi,3402363.95,4842924.85
+PRD00040,Samsung Smartphones 0040,Electronics,Smartphones,Samsung,7649160.49,11945693.94
+PRD00041,Lenovo Accessories 0041,Electronics,Accessories,Lenovo,4231237.17,4992859.86
+PRD00042,ASUS Smartphones 0042,Electronics,Smartphones,ASUS,7700728.27,11334701.94
+PRD00043,ASUS Accessories 0043,Electronics,Accessories,ASUS,2499159.97,3920682.16
+PRD00044,Xiaomi Laptops 0044,Electronics,Laptops,Xiaomi,5932348.76,8326051.48
+PRD00045,ASUS Smartphones 0045,Electronics,Smartphones,ASUS,1713932.38,2558901.04
+PRD00046,ASUS Audio 0046,Electronics,Audio,ASUS,6280863.8,9269926.88
+PRD00047,Lenovo Accessories 0047,Electronics,Accessories,Lenovo,647238.02,978947.51
+PRD00048,Apple Accessories 0048,Electronics,Accessories,Apple,7198970.64,9113176.93
+PRD00049,Xiaomi Smartphones 0049,Electronics,Smartphones,Xiaomi,3629604.59,4200541.39
+PRD00050,ASUS Audio 0050,Electronics,Audio,ASUS,6073286.29,8332548.79
+PRD00051,Apple Smartphones 0051,Electronics,Smartphones,Apple,4720148.58,6119200.62
+PRD00052,Samsung Smartphones 0052,Electronics,Smartphones,Samsung,2261491.29,3184179.74
+PRD00053,Lenovo Smartphones 0053,Electronics,Smartphones,Lenovo,2899199.49,4417510.26
+PRD00054,Apple Laptops 0054,Electronics,Laptops,Apple,6380896.83,8606553.64
+PRD00055,Apple Smartphones 0055,Electronics,Smartphones,Apple,3322665.19,4443400.16
+PRD00056,Lenovo Laptops 0056,Electronics,Laptops,Lenovo,6666487.15,9471078.29
+PRD00057,ASUS Laptops 0057,Electronics,Laptops,ASUS,5652408.68,7228865.46
+PRD00058,Samsung Accessories 0058,Electronics,Accessories,Samsung,2359313.19,2969903.44
+PRD00059,Apple Smartphones 0059,Electronics,Smartphones,Apple,6680579.74,10640159.35
+PRD00060,ASUS Accessories 0060,Electronics,Accessories,ASUS,7523893.95,10562794.72
+PRD00061,Xiaomi Laptops 0061,Electronics,Laptops,Xiaomi,2423201.83,2854289.44
+PRD00062,Xiaomi Accessories 0062,Electronics,Accessories,Xiaomi,5733348.43,7865580.71
+PRD00063,Xiaomi Audio 0063,Electronics,Audio,Xiaomi,7212360.15,11342878.81
+PRD00064,ASUS Audio 0064,Electronics,Audio,ASUS,269232.21,389148.24
+PRD00065,Lenovo Audio 0065,Electronics,Audio,Lenovo,4385954.48,5610074.38
+PRD00066,Lenovo Laptops 0066,Electronics,Laptops,Lenovo,5645770.42,7988765.14
+PRD00067,Samsung Smartphones 0067,Electronics,Smartphones,Samsung,2623694.74,4058331.02
+PRD00068,Lenovo Smartphones 0068,Electronics,Smartphones,Lenovo,6288736.46,9283432.76
+PRD00069,Samsung Accessories 0069,Electronics,Accessories,Samsung,5315312.54,6473519.14
+PRD00070,ASUS Audio 0070,Electronics,Audio,ASUS,3457707.55,5507436.59
+PRD00071,ASUS Audio 0071,Electronics,Audio,ASUS,1879558.76,2808436.7
+PRD00072,Apple Laptops 0072,Electronics,Laptops,Apple,5113869.38,6474670.02
+PRD00073,Lenovo Laptops 0073,Electronics,Laptops,Lenovo,3061887.82,3760916.81
+PRD00074,Apple Accessories 0074,Electronics,Accessories,Apple,2878639.99,4482042.46
+PRD00075,Lenovo Audio 0075,Electronics,Audio,Lenovo,4041389.57,4749441.02
+PRD00076,Apple Accessories 0076,Electronics,Accessories,Apple,1780770.07,2589773.91
+PRD00077,Xiaomi Accessories 0077,Electronics,Accessories,Xiaomi,2800950.07,4331389.19
+PRD00078,Lenovo Audio 0078,Electronics,Audio,Lenovo,4743037.91,5464928.28
+PRD00079,Samsung Laptops 0079,Electronics,Laptops,Samsung,1709892.61,2266120.68
+PRD00080,ASUS Audio 0080,Electronics,Audio,ASUS,4059983.09,6016894.94
+PRD00081,ASUS Accessories 0081,Electronics,Accessories,ASUS,2906518.53,4448717.26
+PRD00082,Xiaomi Accessories 0082,Electronics,Accessories,Xiaomi,2580405.53,3338528.67
+PRD00083,Apple Laptops 0083,Electronics,Laptops,Apple,4213059.09,6352871.8
+PRD00084,Lenovo Audio 0084,Electronics,Audio,Lenovo,4706251.67,6400502.27
+PRD00085,Adidas Women's Wear 0085,Fashion,Women's Wear,Adidas,985182.44,1523880.2
+PRD00086,Adidas Footwear 0086,Fashion,Footwear,Adidas,1040851.58,1497473.17
+PRD00087,H&M Footwear 0087,Fashion,Footwear,H&M,678061.19,931317.04
+PRD00088,Zara Men's Wear 0088,Fashion,Men's Wear,Zara,787657.25,981105.87
+PRD00089,Adidas Kids Wear 0089,Fashion,Kids Wear,Adidas,1335942.89,2039450.42
+PRD00090,Zara Footwear 0090,Fashion,Footwear,Zara,1253855.83,1633523.38
+PRD00091,Uniqlo Men's Wear 0091,Fashion,Men's Wear,Uniqlo,105796.19,136371.29
+PRD00092,Zara Footwear 0092,Fashion,Footwear,Zara,142603.25,189933.27
+PRD00093,H&M Women's Wear 0093,Fashion,Women's Wear,H&M,1418762.93,2169856.03
+PRD00094,H&M Women's Wear 0094,Fashion,Women's Wear,H&M,962856.18,1202607.37
+PRD00095,Uniqlo Kids Wear 0095,Fashion,Kids Wear,Uniqlo,1147281.32,1706351.51
+PRD00096,Adidas Women's Wear 0096,Fashion,Women's Wear,Adidas,632328.82,950200.52
+PRD00097,H&M Kids Wear 0097,Fashion,Kids Wear,H&M,1081511.65,1288296.68
+PRD00098,Uniqlo Women's Wear 0098,Fashion,Women's Wear,Uniqlo,1360980.5,1928781.56
+PRD00099,H&M Women's Wear 0099,Fashion,Women's Wear,H&M,889270.1,1205850.26
+PRD00100,Zara Men's Wear 0100,Fashion,Men's Wear,Zara,367624.24,435046.53
+PRD00101,H&M Footwear 0101,Fashion,Footwear,H&M,1480921.32,1755632.22
+PRD00102,Nike Footwear 0102,Fashion,Footwear,Nike,968270.14,1190004.0
+PRD00103,Nike Footwear 0103,Fashion,Footwear,Nike,1083838.89,1691764.12
+PRD00104,Zara Kids Wear 0104,Fashion,Kids Wear,Zara,1157809.2,1498089.32
+PRD00105,Zara Men's Wear 0105,Fashion,Men's Wear,Zara,1391576.82,1917453.7
+PRD00106,Uniqlo Women's Wear 0106,Fashion,Women's Wear,Uniqlo,165505.66,213502.3
+PRD00107,H&M Women's Wear 0107,Fashion,Women's Wear,H&M,1052827.21,1280237.89
+PRD00108,H&M Men's Wear 0108,Fashion,Men's Wear,H&M,1252538.92,1884695.31
+PRD00109,Uniqlo Women's Wear 0109,Fashion,Women's Wear,Uniqlo,842749.34,1131390.99
+PRD00110,H&M Men's Wear 0110,Fashion,Men's Wear,H&M,311100.64,376960.65
+PRD00111,Adidas Women's Wear 0111,Fashion,Women's Wear,Adidas,522850.46,658843.86
+PRD00112,Zara Men's Wear 0112,Fashion,Men's Wear,Zara,255803.95,331905.63
+PRD00113,Nike Women's Wear 0113,Fashion,Women's Wear,Nike,445735.32,683668.83
+PRD00114,Uniqlo Kids Wear 0114,Fashion,Kids Wear,Uniqlo,937030.34,1121250.5
+PRD00115,Nike Kids Wear 0115,Fashion,Kids Wear,Nike,361698.56,479756.97
+PRD00116,Nike Footwear 0116,Fashion,Footwear,Nike,386975.76,494322.84
+PRD00117,Nike Men's Wear 0117,Fashion,Men's Wear,Nike,450076.41,676374.83
+PRD00118,H&M Footwear 0118,Fashion,Footwear,H&M,251290.43,328034.53
+PRD00119,Adidas Footwear 0119,Fashion,Footwear,Adidas,963829.83,1234280.48
+PRD00120,Nike Men's Wear 0120,Fashion,Men's Wear,Nike,1452658.74,2065680.73
+PRD00121,Zara Women's Wear 0121,Fashion,Women's Wear,Zara,1229550.96,1539274.85
+PRD00122,Zara Women's Wear 0122,Fashion,Women's Wear,Zara,62656.1,98777.34
+PRD00123,Nike Kids Wear 0123,Fashion,Kids Wear,Nike,1073255.29,1433654.42
+PRD00124,Uniqlo Women's Wear 0124,Fashion,Women's Wear,Uniqlo,542577.13,762266.61
+PRD00125,H&M Footwear 0125,Fashion,Footwear,H&M,920385.8,1276943.26
+PRD00126,Adidas Kids Wear 0126,Fashion,Kids Wear,Adidas,1455125.08,2310593.11
+PRD00127,Nike Women's Wear 0127,Fashion,Women's Wear,Nike,1462668.57,2037204.78
+PRD00128,Uniqlo Men's Wear 0128,Fashion,Men's Wear,Uniqlo,1408054.06,2189383.26
+PRD00129,Uniqlo Women's Wear 0129,Fashion,Women's Wear,Uniqlo,780531.35,1150737.37
+PRD00130,Uniqlo Kids Wear 0130,Fashion,Kids Wear,Uniqlo,906510.67,1187075.72
+PRD00131,Uniqlo Kids Wear 0131,Fashion,Kids Wear,Uniqlo,999575.62,1371017.92
+PRD00132,Uniqlo Men's Wear 0132,Fashion,Men's Wear,Uniqlo,823405.95,1026540.2
+PRD00133,Uniqlo Kids Wear 0133,Fashion,Kids Wear,Uniqlo,1060364.92,1640914.71
+PRD00134,Uniqlo Kids Wear 0134,Fashion,Kids Wear,Uniqlo,518104.28,719646.84
+PRD00135,H&M Kids Wear 0135,Fashion,Kids Wear,H&M,1388809.68,1702680.67
+PRD00136,Zara Men's Wear 0136,Fashion,Men's Wear,Zara,1407439.89,1700891.11
+PRD00137,Nike Footwear 0137,Fashion,Footwear,Nike,790930.68,975929.37
+PRD00138,Nike Women's Wear 0138,Fashion,Women's Wear,Nike,992757.79,1334862.12
+PRD00139,Zara Women's Wear 0139,Fashion,Women's Wear,Zara,1181191.34,1525390.5
+PRD00140,Nike Footwear 0140,Fashion,Footwear,Nike,959783.28,1196945.73
+PRD00141,Nike Men's Wear 0141,Fashion,Men's Wear,Nike,458186.76,667761.38
+PRD00142,Uniqlo Footwear 0142,Fashion,Footwear,Uniqlo,777077.31,1145800.49
+PRD00143,Nike Kids Wear 0143,Fashion,Kids Wear,Nike,1465502.0,2316372.46
+PRD00144,Zara Men's Wear 0144,Fashion,Men's Wear,Zara,1211098.56,1761300.64
+PRD00145,Uniqlo Footwear 0145,Fashion,Footwear,Uniqlo,351504.21,410240.56
+PRD00146,H&M Men's Wear 0146,Fashion,Men's Wear,H&M,277511.38,325826.11
+PRD00147,Uniqlo Kids Wear 0147,Fashion,Kids Wear,Uniqlo,258011.48,396176.63
+PRD00148,Zara Men's Wear 0148,Fashion,Men's Wear,Zara,1188261.66,1575872.61
+PRD00149,Uniqlo Women's Wear 0149,Fashion,Women's Wear,Uniqlo,346065.68,483730.61
+PRD00150,Uniqlo Men's Wear 0150,Fashion,Men's Wear,Uniqlo,1446713.09,1972448.63
+PRD00151,Uniqlo Kids Wear 0151,Fashion,Kids Wear,Uniqlo,1050646.91,1596352.92
+PRD00152,H&M Women's Wear 0152,Fashion,Women's Wear,H&M,1118176.61,1441329.65
+PRD00153,H&M Men's Wear 0153,Fashion,Men's Wear,H&M,1250614.84,1708965.18
+PRD00154,Adidas Men's Wear 0154,Fashion,Men's Wear,Adidas,380268.74,536064.84
+PRD00155,H&M Women's Wear 0155,Fashion,Women's Wear,H&M,467019.78,629355.86
+PRD00156,H&M Footwear 0156,Fashion,Footwear,H&M,270942.63,376068.37
+PRD00157,Nike Footwear 0157,Fashion,Footwear,Nike,597036.64,883017.19
+PRD00158,Nike Footwear 0158,Fashion,Footwear,Nike,280431.55,324571.48
+PRD00159,Zara Women's Wear 0159,Fashion,Women's Wear,Zara,112209.47,167741.94
+PRD00160,H&M Women's Wear 0160,Fashion,Women's Wear,H&M,98722.33,121290.25
+PRD00161,Adidas Women's Wear 0161,Fashion,Women's Wear,Adidas,578101.84,749855.9
+PRD00162,Nike Footwear 0162,Fashion,Footwear,Nike,714624.16,1055428.42
+PRD00163,Zara Women's Wear 0163,Fashion,Women's Wear,Zara,320286.76,435718.11
+PRD00164,Adidas Men's Wear 0164,Fashion,Men's Wear,Adidas,1119386.3,1524939.96
+PRD00165,Nike Men's Wear 0165,Fashion,Men's Wear,Nike,251226.88,357269.75
+PRD00166,H&M Men's Wear 0166,Fashion,Men's Wear,H&M,188842.43,253369.89
+PRD00167,H&M Men's Wear 0167,Fashion,Men's Wear,H&M,1134247.27,1475995.97
+PRD00168,Zara Women's Wear 0168,Fashion,Women's Wear,Zara,114710.52,140222.14
+PRD00169,Wings Snacks 0169,Food & Beverage,Snacks,Wings,35184.98,53871.72
+PRD00170,ABC Dairy 0170,Food & Beverage,Dairy,ABC,158858.1,222051.85
+PRD00171,ABC Beverages 0171,Food & Beverage,Beverages,ABC,143258.49,215661.33
+PRD00172,Garuda Dairy 0172,Food & Beverage,Dairy,Garuda,8375.75,12599.64
+PRD00173,Indofood Instant Food 0173,Food & Beverage,Instant Food,Indofood,191189.74,237457.66
+PRD00174,Garuda Snacks 0174,Food & Beverage,Snacks,Garuda,187475.03,219739.48
+PRD00175,Indofood Instant Food 0175,Food & Beverage,Instant Food,Indofood,27137.79,43100.24
+PRD00176,Garuda Dairy 0176,Food & Beverage,Dairy,Garuda,64285.12,79790.69
+PRD00177,Indofood Instant Food 0177,Food & Beverage,Instant Food,Indofood,45988.22,65832.14
+PRD00178,Mayora Dairy 0178,Food & Beverage,Dairy,Mayora,142633.52,204807.47
+PRD00179,Mayora Beverages 0179,Food & Beverage,Beverages,Mayora,88942.63,125240.12
+PRD00180,ABC Beverages 0180,Food & Beverage,Beverages,ABC,19424.0,30858.91
+PRD00181,Mayora Instant Food 0181,Food & Beverage,Instant Food,Mayora,83790.19,98503.75
+PRD00182,Wings Snacks 0182,Food & Beverage,Snacks,Wings,109565.72,166375.55
+PRD00183,Mayora Instant Food 0183,Food & Beverage,Instant Food,Mayora,131270.59,179551.91
+PRD00184,Mayora Instant Food 0184,Food & Beverage,Instant Food,Mayora,196049.08,307855.87
+PRD00185,Garuda Dairy 0185,Food & Beverage,Dairy,Garuda,99375.72,119360.18
+PRD00186,Mayora Instant Food 0186,Food & Beverage,Instant Food,Mayora,117339.96,135926.61
+PRD00187,ABC Snacks 0187,Food & Beverage,Snacks,ABC,174282.33,277666.61
+PRD00188,Mayora Dairy 0188,Food & Beverage,Dairy,Mayora,81562.96,105885.03
+PRD00189,Indofood Beverages 0189,Food & Beverage,Beverages,Indofood,177954.94,255294.16
+PRD00190,Wings Beverages 0190,Food & Beverage,Beverages,Wings,31691.85,42885.41
+PRD00191,Garuda Instant Food 0191,Food & Beverage,Instant Food,Garuda,130612.45,151458.2
+PRD00192,ABC Snacks 0192,Food & Beverage,Snacks,ABC,169701.49,229130.95
+PRD00193,Wings Dairy 0193,Food & Beverage,Dairy,Wings,129067.88,182811.75
+PRD00194,Indofood Snacks 0194,Food & Beverage,Snacks,Indofood,193825.01,237571.31
+PRD00195,Indofood Snacks 0195,Food & Beverage,Snacks,Indofood,13107.48,16582.27
+PRD00196,Indofood Snacks 0196,Food & Beverage,Snacks,Indofood,117546.06,173603.78
+PRD00197,Garuda Instant Food 0197,Food & Beverage,Instant Food,Garuda,116473.06,183806.14
+PRD00198,Mayora Snacks 0198,Food & Beverage,Snacks,Mayora,117779.55,183182.53
+PRD00199,Wings Dairy 0199,Food & Beverage,Dairy,Wings,6465.82,9112.28
+PRD00200,Indofood Instant Food 0200,Food & Beverage,Instant Food,Indofood,19426.17,29894.93
+PRD00201,ABC Snacks 0201,Food & Beverage,Snacks,ABC,122953.32,180569.25
+PRD00202,ABC Instant Food 0202,Food & Beverage,Instant Food,ABC,29699.6,39488.59
+PRD00203,Indofood Snacks 0203,Food & Beverage,Snacks,Indofood,191728.05,265409.14
+PRD00204,Mayora Beverages 0204,Food & Beverage,Beverages,Mayora,39912.45,55290.72
+PRD00205,ABC Snacks 0205,Food & Beverage,Snacks,ABC,135334.77,200566.13
+PRD00206,ABC Instant Food 0206,Food & Beverage,Instant Food,ABC,119520.82,163420.82
+PRD00207,Garuda Beverages 0207,Food & Beverage,Beverages,Garuda,138968.9,177296.52
+PRD00208,ABC Snacks 0208,Food & Beverage,Snacks,ABC,175674.94,271962.37
+PRD00209,Indofood Snacks 0209,Food & Beverage,Snacks,Indofood,105228.06,167680.91
+PRD00210,Indofood Snacks 0210,Food & Beverage,Snacks,Indofood,30733.63,45857.65
+PRD00211,Wings Beverages 0211,Food & Beverage,Beverages,Wings,42474.29,58814.15
+PRD00212,ABC Dairy 0212,Food & Beverage,Dairy,ABC,68332.58,91695.49
+PRD00213,Wings Dairy 0213,Food & Beverage,Dairy,Wings,90177.91,131407.25
+PRD00214,ABC Beverages 0214,Food & Beverage,Beverages,ABC,119547.48,174288.27
+PRD00215,ABC Snacks 0215,Food & Beverage,Snacks,ABC,82512.43,96589.05
+PRD00216,Garuda Dairy 0216,Food & Beverage,Dairy,Garuda,29140.86,46065.87
+PRD00217,Garuda Instant Food 0217,Food & Beverage,Instant Food,Garuda,42992.56,58478.48
+PRD00218,Garuda Instant Food 0218,Food & Beverage,Instant Food,Garuda,150354.08,176906.61
+PRD00219,Mayora Snacks 0219,Food & Beverage,Snacks,Mayora,129254.09,192627.37
+PRD00220,Indofood Instant Food 0220,Food & Beverage,Instant Food,Indofood,74416.0,115463.87
+PRD00221,Mayora Snacks 0221,Food & Beverage,Snacks,Mayora,9402.22,11293.01
+PRD00222,Wings Beverages 0222,Food & Beverage,Beverages,Wings,6893.95,10647.02
+PRD00223,Garuda Instant Food 0223,Food & Beverage,Instant Food,Garuda,131838.84,183638.32
+PRD00224,Garuda Snacks 0224,Food & Beverage,Snacks,Garuda,11758.65,17623.86
+PRD00225,ABC Snacks 0225,Food & Beverage,Snacks,ABC,52340.4,68450.78
+PRD00226,Mayora Instant Food 0226,Food & Beverage,Instant Food,Mayora,160725.54,198399.61
+PRD00227,ABC Beverages 0227,Food & Beverage,Beverages,ABC,52412.63,68744.41
+PRD00228,Indofood Beverages 0228,Food & Beverage,Beverages,Indofood,60058.35,75751.6
+PRD00229,Garuda Instant Food 0229,Food & Beverage,Instant Food,Garuda,86244.38,137930.64
+PRD00230,Mayora Beverages 0230,Food & Beverage,Beverages,Mayora,141198.17,217431.06
+PRD00231,Garuda Beverages 0231,Food & Beverage,Beverages,Garuda,173752.45,249717.02
+PRD00232,Garuda Snacks 0232,Food & Beverage,Snacks,Garuda,96735.85,141195.65
+PRD00233,Garuda Beverages 0233,Food & Beverage,Beverages,Garuda,33387.92,43350.88
+PRD00234,Wings Snacks 0234,Food & Beverage,Snacks,Wings,93411.71,130598.91
+PRD00235,Indofood Snacks 0235,Food & Beverage,Snacks,Indofood,157456.72,208173.53
+PRD00236,Indofood Beverages 0236,Food & Beverage,Beverages,Indofood,96257.71,140372.62
+PRD00237,Wings Snacks 0237,Food & Beverage,Snacks,Wings,94855.7,133575.8
+PRD00238,Garuda Snacks 0238,Food & Beverage,Snacks,Garuda,45312.07,67315.61
+PRD00239,Mayora Beverages 0239,Food & Beverage,Beverages,Mayora,194206.16,246738.93
+PRD00240,Mayora Dairy 0240,Food & Beverage,Dairy,Mayora,193136.81,282057.0
+PRD00241,Wings Snacks 0241,Food & Beverage,Snacks,Wings,8652.02,11989.1
+PRD00242,Garuda Instant Food 0242,Food & Beverage,Instant Food,Garuda,135472.03,209277.19
+PRD00243,Indofood Beverages 0243,Food & Beverage,Beverages,Indofood,197729.26,260448.98
+PRD00244,ABC Instant Food 0244,Food & Beverage,Instant Food,ABC,24309.22,28259.47
+PRD00245,ABC Dairy 0245,Food & Beverage,Dairy,ABC,48049.65,72012.01
+PRD00246,Indofood Dairy 0246,Food & Beverage,Dairy,Indofood,169773.99,210078.34
+PRD00247,Mayora Dairy 0247,Food & Beverage,Dairy,Mayora,117809.2,170469.91
+PRD00248,Indofood Dairy 0248,Food & Beverage,Dairy,Indofood,143088.91,207264.29
+PRD00249,Mayora Beverages 0249,Food & Beverage,Beverages,Mayora,68457.19,104301.37
+PRD00250,Mayora Beverages 0250,Food & Beverage,Beverages,Mayora,129696.81,206438.41
+PRD00251,ABC Beverages 0251,Food & Beverage,Beverages,ABC,7790.84,9557.02
+PRD00252,Courts Bedding 0252,Home & Living,Bedding,Courts,2905856.4,3963588.13
+PRD00253,Courts Decor 0253,Home & Living,Decor,Courts,2957443.16,3820129.33
+PRD00254,Index Kitchenware 0254,Home & Living,Kitchenware,Index,1886180.71,2949986.63
+PRD00255,Courts Kitchenware 0255,Home & Living,Kitchenware,Courts,622721.54,982592.32
+PRD00256,Index Decor 0256,Home & Living,Decor,Index,2821200.21,3997076.46
+PRD00257,ACE Decor 0257,Home & Living,Decor,ACE,2927742.12,3869303.99
+PRD00258,Olympic Decor 0258,Home & Living,Decor,Olympic,1605380.06,2262622.66
+PRD00259,Index Bedding 0259,Home & Living,Bedding,Index,2740840.08,4053976.56
+PRD00260,Index Furniture 0260,Home & Living,Furniture,Index,2045927.08,2564569.59
+PRD00261,IKEA Kitchenware 0261,Home & Living,Kitchenware,IKEA,823007.42,1134104.22
+PRD00262,Courts Decor 0262,Home & Living,Decor,Courts,2703090.66,3957595.04
+PRD00263,ACE Bedding 0263,Home & Living,Bedding,ACE,857867.11,1288687.97
+PRD00264,Index Decor 0264,Home & Living,Decor,Index,2849933.16,3933477.75
+PRD00265,Index Bedding 0265,Home & Living,Bedding,Index,612811.7,958743.9
+PRD00266,Courts Decor 0266,Home & Living,Decor,Courts,74772.59,100943.0
+PRD00267,Olympic Furniture 0267,Home & Living,Furniture,Olympic,1902112.39,2336935.28
+PRD00268,IKEA Furniture 0268,Home & Living,Furniture,IKEA,814638.65,1174790.4
+PRD00269,Index Bedding 0269,Home & Living,Bedding,Index,2745441.02,4322696.89
+PRD00270,ACE Kitchenware 0270,Home & Living,Kitchenware,ACE,251096.38,301993.62
+PRD00271,ACE Decor 0271,Home & Living,Decor,ACE,2647070.25,3145248.87
+PRD00272,Index Decor 0272,Home & Living,Decor,Index,1970304.16,2471549.54
+PRD00273,ACE Decor 0273,Home & Living,Decor,ACE,296881.56,367687.81
+PRD00274,Courts Decor 0274,Home & Living,Decor,Courts,820558.44,1294512.99
+PRD00275,IKEA Kitchenware 0275,Home & Living,Kitchenware,IKEA,1305688.26,1982426.49
+PRD00276,Index Decor 0276,Home & Living,Decor,Index,42285.16,52150.29
+PRD00277,ACE Bedding 0277,Home & Living,Bedding,ACE,2987350.65,3491914.17
+PRD00278,Index Furniture 0278,Home & Living,Furniture,Index,1746854.97,2195272.64
+PRD00279,ACE Kitchenware 0279,Home & Living,Kitchenware,ACE,1646588.98,2042593.63
+PRD00280,Index Decor 0280,Home & Living,Decor,Index,1033933.55,1205049.55
+PRD00281,Olympic Kitchenware 0281,Home & Living,Kitchenware,Olympic,1816841.87,2654769.34
+PRD00282,IKEA Kitchenware 0282,Home & Living,Kitchenware,IKEA,1544644.73,2148909.75
+PRD00283,ACE Decor 0283,Home & Living,Decor,ACE,2352703.69,2982522.47
+PRD00284,Index Bedding 0284,Home & Living,Bedding,Index,2952500.02,4636015.53
+PRD00285,IKEA Kitchenware 0285,Home & Living,Kitchenware,IKEA,1364643.82,1693932.37
+PRD00286,IKEA Decor 0286,Home & Living,Decor,IKEA,747569.62,906353.41
+PRD00287,IKEA Kitchenware 0287,Home & Living,Kitchenware,IKEA,2132724.02,3312120.4
+PRD00288,ACE Kitchenware 0288,Home & Living,Kitchenware,ACE,2938243.98,4144393.13
+PRD00289,Olympic Bedding 0289,Home & Living,Bedding,Olympic,1172931.63,1570320.87
+PRD00290,ACE Decor 0290,Home & Living,Decor,ACE,2143484.96,2821040.56
+PRD00291,IKEA Decor 0291,Home & Living,Decor,IKEA,574040.97,795104.15
+PRD00292,ACE Decor 0292,Home & Living,Decor,ACE,1840973.11,2710280.61
+PRD00293,Courts Kitchenware 0293,Home & Living,Kitchenware,Courts,2222770.78,2697110.06
+PRD00294,Index Furniture 0294,Home & Living,Furniture,Index,685945.72,1015954.21
+PRD00295,ACE Furniture 0295,Home & Living,Furniture,ACE,1199402.44,1692836.6
+PRD00296,Olympic Furniture 0296,Home & Living,Furniture,Olympic,2393851.92,3223561.0
+PRD00297,ACE Kitchenware 0297,Home & Living,Kitchenware,ACE,1515569.33,2370047.32
+PRD00298,Olympic Kitchenware 0298,Home & Living,Kitchenware,Olympic,1570875.58,2502561.89
+PRD00299,Index Decor 0299,Home & Living,Decor,Index,1366843.43,1999281.89
+PRD00300,Courts Kitchenware 0300,Home & Living,Kitchenware,Courts,2753464.54,3531042.93
+PRD00301,IKEA Decor 0301,Home & Living,Decor,IKEA,2952670.16,4439634.85
+PRD00302,Olympic Kitchenware 0302,Home & Living,Kitchenware,Olympic,192285.46,303849.48
+PRD00303,ACE Decor 0303,Home & Living,Decor,ACE,1057493.56,1474886.27
+PRD00304,IKEA Kitchenware 0304,Home & Living,Kitchenware,IKEA,2817922.55,3866753.32
+PRD00305,Index Furniture 0305,Home & Living,Furniture,Index,2031689.47,2489225.94
+PRD00306,Courts Furniture 0306,Home & Living,Furniture,Courts,839107.98,1166863.56
+PRD00307,Olympic Furniture 0307,Home & Living,Furniture,Olympic,2868486.16,3698052.36
+PRD00308,IKEA Bedding 0308,Home & Living,Bedding,IKEA,2092628.15,3157148.09
+PRD00309,ACE Furniture 0309,Home & Living,Furniture,ACE,1627439.9,1882459.73
+PRD00310,Index Kitchenware 0310,Home & Living,Kitchenware,Index,2109099.79,2916463.19
+PRD00311,Olympic Decor 0311,Home & Living,Decor,Olympic,413015.42,579336.73
+PRD00312,IKEA Decor 0312,Home & Living,Decor,IKEA,1595172.84,2416527.34
+PRD00313,IKEA Kitchenware 0313,Home & Living,Kitchenware,IKEA,362390.61,453096.98
+PRD00314,Olympic Kitchenware 0314,Home & Living,Kitchenware,Olympic,1591893.06,1906610.32
+PRD00315,Courts Furniture 0315,Home & Living,Furniture,Courts,2340835.26,2743224.84
+PRD00316,Index Bedding 0316,Home & Living,Bedding,Index,2252730.13,3542868.68
+PRD00317,Index Furniture 0317,Home & Living,Furniture,Index,792371.82,1198541.61
+PRD00318,Olympic Bedding 0318,Home & Living,Bedding,Olympic,2357381.19,3342059.31
+PRD00319,Courts Kitchenware 0319,Home & Living,Kitchenware,Courts,2961601.68,4403309.38
+PRD00320,ACE Bedding 0320,Home & Living,Bedding,ACE,1302092.18,2057435.85
+PRD00321,Olympic Furniture 0321,Home & Living,Furniture,Olympic,2218064.75,2997492.7
+PRD00322,ACE Bedding 0322,Home & Living,Bedding,ACE,2562677.44,3377865.13
+PRD00323,IKEA Furniture 0323,Home & Living,Furniture,IKEA,710242.63,1063730.39
+PRD00324,ACE Decor 0324,Home & Living,Decor,ACE,967397.49,1450128.84
+PRD00325,Courts Furniture 0325,Home & Living,Furniture,Courts,1972481.34,2301096.73
+PRD00326,ACE Decor 0326,Home & Living,Decor,ACE,1442012.58,1853418.77
+PRD00327,Index Kitchenware 0327,Home & Living,Kitchenware,Index,1485776.96,1871484.66
+PRD00328,IKEA Kitchenware 0328,Home & Living,Kitchenware,IKEA,325033.55,417895.64
+PRD00329,IKEA Kitchenware 0329,Home & Living,Kitchenware,IKEA,1992105.05,2982579.68
+PRD00330,Courts Bedding 0330,Home & Living,Bedding,Courts,904972.02,1342616.49
+PRD00331,Olympic Furniture 0331,Home & Living,Furniture,Olympic,2279475.97,3036489.94
+PRD00332,ACE Bedding 0332,Home & Living,Bedding,ACE,214683.67,292613.84
+PRD00333,Courts Furniture 0333,Home & Living,Furniture,Courts,2747886.08,3351321.86
+PRD00334,Index Decor 0334,Home & Living,Decor,Index,1591898.99,2173897.26
+PRD00335,Decathlon Outdoor 0335,Sports,Outdoor,Decathlon,456056.18,649332.79
+PRD00336,Decathlon Team Sports 0336,Sports,Team Sports,Decathlon,1891400.34,2961176.37
+PRD00337,Reebok Swimming 0337,Sports,Swimming,Reebok,772119.15,1179025.94
+PRD00338,Speedo Gym Equipment 0338,Sports,Gym Equipment,Speedo,864737.7,1293561.13
+PRD00339,Decathlon Swimming 0339,Sports,Swimming,Decathlon,1833819.26,2504263.58
+PRD00340,Adidas Outdoor 0340,Sports,Outdoor,Adidas,1954649.45,3002927.95
+PRD00341,Reebok Swimming 0341,Sports,Swimming,Reebok,1280934.04,1978146.44
+PRD00342,Adidas Swimming 0342,Sports,Swimming,Adidas,1459379.77,2045758.56
+PRD00343,Decathlon Team Sports 0343,Sports,Team Sports,Decathlon,358135.46,552603.01
+PRD00344,Nike Outdoor 0344,Sports,Outdoor,Nike,1822577.97,2801484.6
+PRD00345,Speedo Outdoor 0345,Sports,Outdoor,Speedo,1775795.15,2591417.86
+PRD00346,Nike Outdoor 0346,Sports,Outdoor,Nike,1767289.49,2489934.16
+PRD00347,Speedo Swimming 0347,Sports,Swimming,Speedo,969813.32,1250283.33
+PRD00348,Speedo Outdoor 0348,Sports,Outdoor,Speedo,1478809.39,2102571.19
+PRD00349,Decathlon Swimming 0349,Sports,Swimming,Decathlon,1340822.62,1777796.71
+PRD00350,Speedo Gym Equipment 0350,Sports,Gym Equipment,Speedo,1673331.39,1936379.08
+PRD00351,Reebok Swimming 0351,Sports,Swimming,Reebok,1294311.15,1564563.32
+PRD00352,Decathlon Gym Equipment 0352,Sports,Gym Equipment,Decathlon,1825125.44,2805765.34
+PRD00353,Decathlon Team Sports 0353,Sports,Team Sports,Decathlon,136527.16,180406.99
+PRD00354,Speedo Team Sports 0354,Sports,Team Sports,Speedo,79286.2,96911.52
+PRD00355,Reebok Swimming 0355,Sports,Swimming,Reebok,1441589.67,2042588.4
+PRD00356,Adidas Team Sports 0356,Sports,Team Sports,Adidas,1138335.1,1806082.47
+PRD00357,Speedo Gym Equipment 0357,Sports,Gym Equipment,Speedo,706975.91,955477.94
+PRD00358,Nike Swimming 0358,Sports,Swimming,Nike,1260423.77,2007098.81
+PRD00359,Reebok Gym Equipment 0359,Sports,Gym Equipment,Reebok,79613.04,126775.8
+PRD00360,Reebok Swimming 0360,Sports,Swimming,Reebok,352904.79,488455.52
+PRD00361,Speedo Outdoor 0361,Sports,Outdoor,Speedo,752272.55,1134351.78
+PRD00362,Speedo Swimming 0362,Sports,Swimming,Speedo,1569281.41,1958777.06
+PRD00363,Reebok Swimming 0363,Sports,Swimming,Reebok,1349427.91,2094986.83
+PRD00364,Decathlon Gym Equipment 0364,Sports,Gym Equipment,Decathlon,917569.78,1156780.22
+PRD00365,Decathlon Swimming 0365,Sports,Swimming,Decathlon,1811523.9,2841737.54
+PRD00366,Speedo Gym Equipment 0366,Sports,Gym Equipment,Speedo,644120.74,1025118.16
+PRD00367,Nike Gym Equipment 0367,Sports,Gym Equipment,Nike,799511.26,1140822.62
+PRD00368,Adidas Team Sports 0368,Sports,Team Sports,Adidas,557093.83,687175.24
+PRD00369,Nike Swimming 0369,Sports,Swimming,Nike,173932.14,209466.48
+PRD00370,Speedo Outdoor 0370,Sports,Outdoor,Speedo,585770.07,847492.14
+PRD00371,Adidas Gym Equipment 0371,Sports,Gym Equipment,Adidas,56630.71,67413.2
+PRD00372,Decathlon Outdoor 0372,Sports,Outdoor,Decathlon,838123.35,1097438.71
+PRD00373,Reebok Gym Equipment 0373,Sports,Gym Equipment,Reebok,1365577.56,1774158.37
+PRD00374,Adidas Gym Equipment 0374,Sports,Gym Equipment,Adidas,699095.35,1038226.5
+PRD00375,Decathlon Outdoor 0375,Sports,Outdoor,Decathlon,663737.31,781019.69
+PRD00376,Decathlon Team Sports 0376,Sports,Team Sports,Decathlon,1271715.14,1633645.27
+PRD00377,Speedo Swimming 0377,Sports,Swimming,Speedo,1523321.23,1827833.14
+PRD00378,Decathlon Team Sports 0378,Sports,Team Sports,Decathlon,599704.44,819616.06
+PRD00379,Reebok Outdoor 0379,Sports,Outdoor,Reebok,1240149.58,1722691.78
+PRD00380,Speedo Gym Equipment 0380,Sports,Gym Equipment,Speedo,571298.42,789762.94
+PRD00381,Adidas Swimming 0381,Sports,Swimming,Adidas,1506605.94,2324542.3
+PRD00382,Decathlon Outdoor 0382,Sports,Outdoor,Decathlon,516600.23,704591.05
+PRD00383,Reebok Gym Equipment 0383,Sports,Gym Equipment,Reebok,1180630.01,1401643.95
+PRD00384,Nike Swimming 0384,Sports,Swimming,Nike,1318454.01,1619984.44
+PRD00385,Speedo Team Sports 0385,Sports,Team Sports,Speedo,1553837.85,1923185.11
+PRD00386,Decathlon Gym Equipment 0386,Sports,Gym Equipment,Decathlon,401479.4,557213.26
+PRD00387,Nike Gym Equipment 0387,Sports,Gym Equipment,Nike,1025820.48,1511136.15
+PRD00388,Decathlon Outdoor 0388,Sports,Outdoor,Decathlon,378234.37,469994.03
+PRD00389,Decathlon Swimming 0389,Sports,Swimming,Decathlon,299049.38,421839.06
+PRD00390,Reebok Outdoor 0390,Sports,Outdoor,Reebok,95736.81,140196.98
+PRD00391,Nike Outdoor 0391,Sports,Outdoor,Nike,1023610.79,1556093.12
+PRD00392,Adidas Outdoor 0392,Sports,Outdoor,Adidas,1754553.55,2374963.69
+PRD00393,Decathlon Outdoor 0393,Sports,Outdoor,Decathlon,1915855.65,2576825.85
+PRD00394,Speedo Gym Equipment 0394,Sports,Gym Equipment,Speedo,1064899.51,1341986.36
+PRD00395,Nike Outdoor 0395,Sports,Outdoor,Nike,1151668.66,1465383.2
+PRD00396,Adidas Gym Equipment 0396,Sports,Gym Equipment,Adidas,1418898.52,1846838.31
+PRD00397,Nike Gym Equipment 0397,Sports,Gym Equipment,Nike,64525.61,93852.5
+PRD00398,Speedo Outdoor 0398,Sports,Outdoor,Speedo,784019.02,1011776.55
+PRD00399,Nike Team Sports 0399,Sports,Team Sports,Nike,1495408.96,2080412.95
+PRD00400,Reebok Outdoor 0400,Sports,Outdoor,Reebok,1865415.27,2611208.29
+PRD00401,Reebok Swimming 0401,Sports,Swimming,Reebok,335863.26,535231.69
+PRD00402,Nike Team Sports 0402,Sports,Team Sports,Nike,1099498.68,1294989.55
+PRD00403,Reebok Gym Equipment 0403,Sports,Gym Equipment,Reebok,1185286.64,1583424.42
+PRD00404,Decathlon Outdoor 0404,Sports,Outdoor,Decathlon,1684156.73,2252054.38
+PRD00405,Decathlon Team Sports 0405,Sports,Team Sports,Decathlon,893058.85,1421124.55
+PRD00406,Reebok Outdoor 0406,Sports,Outdoor,Reebok,1603258.72,2557197.66
+PRD00407,Nike Team Sports 0407,Sports,Team Sports,Nike,1573449.02,2055711.14
+PRD00408,Adidas Swimming 0408,Sports,Swimming,Adidas,553322.86,727287.57
+PRD00409,Decathlon Team Sports 0409,Sports,Team Sports,Decathlon,607055.23,872581.19
+PRD00410,Reebok Team Sports 0410,Sports,Team Sports,Reebok,746393.29,874474.38
+PRD00411,Adidas Swimming 0411,Sports,Swimming,Adidas,957666.24,1127939.3
+PRD00412,Speedo Outdoor 0412,Sports,Outdoor,Speedo,405444.85,489169.21
+PRD00413,Reebok Outdoor 0413,Sports,Outdoor,Reebok,1802122.54,2360239.89
+PRD00414,Speedo Swimming 0414,Sports,Swimming,Speedo,474405.49,659281.31
+PRD00415,Adidas Gym Equipment 0415,Sports,Gym Equipment,Adidas,701463.55,956515.7
+PRD00416,Reebok Outdoor 0416,Sports,Outdoor,Reebok,1231635.9,1421923.65
+PRD00417,Nike Gym Equipment 0417,Sports,Gym Equipment,Nike,1711511.51,2581815.11
+PRD00418,Wardah Fragrance 0418,Beauty,Fragrance,Wardah,301522.73,472576.57
+PRD00419,Wardah Haircare 0419,Beauty,Haircare,Wardah,264645.17,333849.88
+PRD00420,Nivea Haircare 0420,Beauty,Haircare,Nivea,214789.38,319069.62
+PRD00421,L'Oreal Haircare 0421,Beauty,Haircare,L'Oreal,444833.25,634732.56
+PRD00422,Nivea Haircare 0422,Beauty,Haircare,Nivea,246908.86,363104.17
+PRD00423,Emina Haircare 0423,Beauty,Haircare,Emina,144115.75,204485.84
+PRD00424,Emina Haircare 0424,Beauty,Haircare,Emina,316227.07,370112.16
+PRD00425,Pond's Skincare 0425,Beauty,Skincare,Pond's,122520.63,189931.48
+PRD00426,L'Oreal Fragrance 0426,Beauty,Fragrance,L'Oreal,151379.99,191117.24
+PRD00427,L'Oreal Haircare 0427,Beauty,Haircare,L'Oreal,381961.17,487535.24
+PRD00428,Emina Fragrance 0428,Beauty,Fragrance,Emina,368992.19,541127.05
+PRD00429,Wardah Skincare 0429,Beauty,Skincare,Wardah,273351.85,344450.67
+PRD00430,L'Oreal Makeup 0430,Beauty,Makeup,L'Oreal,499362.2,687322.13
+PRD00431,Wardah Makeup 0431,Beauty,Makeup,Wardah,451389.45,620976.47
+PRD00432,Emina Makeup 0432,Beauty,Makeup,Emina,474129.46,657617.56
+PRD00433,Wardah Makeup 0433,Beauty,Makeup,Wardah,251780.16,318778.86
+PRD00434,Pond's Skincare 0434,Beauty,Skincare,Pond's,342926.29,451256.71
+PRD00435,Wardah Skincare 0435,Beauty,Skincare,Wardah,64354.62,95714.63
+PRD00436,L'Oreal Makeup 0436,Beauty,Makeup,L'Oreal,321932.11,444942.37
+PRD00437,Emina Makeup 0437,Beauty,Makeup,Emina,456092.38,593421.8
+PRD00438,Wardah Haircare 0438,Beauty,Haircare,Wardah,421391.45,545154.12
+PRD00439,Nivea Skincare 0439,Beauty,Skincare,Nivea,43893.16,57759.01
+PRD00440,L'Oreal Fragrance 0440,Beauty,Fragrance,L'Oreal,322840.64,421888.15
+PRD00441,Wardah Haircare 0441,Beauty,Haircare,Wardah,401447.66,518389.36
+PRD00442,Emina Makeup 0442,Beauty,Makeup,Emina,447704.06,697119.99
+PRD00443,Emina Skincare 0443,Beauty,Skincare,Emina,117355.18,164438.08
+PRD00444,L'Oreal Skincare 0444,Beauty,Skincare,L'Oreal,281949.01,383591.63
+PRD00445,Nivea Haircare 0445,Beauty,Haircare,Nivea,202219.21,252672.9
+PRD00446,Wardah Fragrance 0446,Beauty,Fragrance,Wardah,100447.67,115605.22
+PRD00447,Nivea Haircare 0447,Beauty,Haircare,Nivea,320640.91,439181.85
+PRD00448,L'Oreal Haircare 0448,Beauty,Haircare,L'Oreal,155406.29,189751.08
+PRD00449,Pond's Makeup 0449,Beauty,Makeup,Pond's,314490.85,420757.31
+PRD00450,Wardah Fragrance 0450,Beauty,Fragrance,Wardah,204787.59,323605.35
+PRD00451,Wardah Fragrance 0451,Beauty,Fragrance,Wardah,143520.15,224609.03
+PRD00452,Pond's Haircare 0452,Beauty,Haircare,Pond's,145110.34,209045.96
+PRD00453,Emina Makeup 0453,Beauty,Makeup,Emina,310535.61,483659.21
+PRD00454,L'Oreal Makeup 0454,Beauty,Makeup,L'Oreal,174204.14,277437.51
+PRD00455,Emina Haircare 0455,Beauty,Haircare,Emina,252443.94,349054.24
+PRD00456,Emina Makeup 0456,Beauty,Makeup,Emina,383750.51,511309.18
+PRD00457,Emina Fragrance 0457,Beauty,Fragrance,Emina,78169.75,111118.3
+PRD00458,Wardah Fragrance 0458,Beauty,Fragrance,Wardah,474511.2,740759.43
+PRD00459,Nivea Makeup 0459,Beauty,Makeup,Nivea,203107.03,317517.22
+PRD00460,Wardah Fragrance 0460,Beauty,Fragrance,Wardah,336785.19,420779.42
+PRD00461,Pond's Fragrance 0461,Beauty,Fragrance,Pond's,277354.96,364971.39
+PRD00462,Emina Haircare 0462,Beauty,Haircare,Emina,191612.53,221427.44
+PRD00463,Nivea Haircare 0463,Beauty,Haircare,Nivea,241095.45,320825.72
+PRD00464,Pond's Skincare 0464,Beauty,Skincare,Pond's,428851.58,676813.56
+PRD00465,L'Oreal Haircare 0465,Beauty,Haircare,L'Oreal,219854.75,310786.67
+PRD00466,Nivea Fragrance 0466,Beauty,Fragrance,Nivea,310108.44,420383.0
+PRD00467,Nivea Fragrance 0467,Beauty,Fragrance,Nivea,209802.97,258477.26
+PRD00468,Pond's Haircare 0468,Beauty,Haircare,Pond's,379314.54,590592.74
+PRD00469,Emina Haircare 0469,Beauty,Haircare,Emina,202743.89,310968.58
+PRD00470,Nivea Fragrance 0470,Beauty,Fragrance,Nivea,241129.46,338569.87
+PRD00471,Nivea Makeup 0471,Beauty,Makeup,Nivea,277737.27,357170.13
+PRD00472,Emina Skincare 0472,Beauty,Skincare,Emina,167271.34,215780.03
+PRD00473,Wardah Haircare 0473,Beauty,Haircare,Wardah,345479.56,482496.75
+PRD00474,L'Oreal Haircare 0474,Beauty,Haircare,L'Oreal,390667.52,477239.44
+PRD00475,L'Oreal Haircare 0475,Beauty,Haircare,L'Oreal,437427.9,505272.97
+PRD00476,Nivea Fragrance 0476,Beauty,Fragrance,Nivea,89976.73,121756.51
+PRD00477,Emina Makeup 0477,Beauty,Makeup,Emina,49524.68,58072.64
+PRD00478,L'Oreal Haircare 0478,Beauty,Haircare,L'Oreal,432477.03,584276.47
+PRD00479,Pond's Haircare 0479,Beauty,Haircare,Pond's,342286.81,501142.12
+PRD00480,Pond's Skincare 0480,Beauty,Skincare,Pond's,51794.61,76169.15
+PRD00481,L'Oreal Fragrance 0481,Beauty,Fragrance,L'Oreal,165855.17,253161.33
+PRD00482,Pond's Fragrance 0482,Beauty,Fragrance,Pond's,472373.04,656787.47
+PRD00483,Nivea Fragrance 0483,Beauty,Fragrance,Nivea,23118.11,33292.39
+PRD00484,Nivea Skincare 0484,Beauty,Skincare,Nivea,276201.81,440818.09
+PRD00485,Wardah Skincare 0485,Beauty,Skincare,Wardah,386404.39,615696.76
+PRD00486,Emina Makeup 0486,Beauty,Makeup,Emina,449048.25,713178.43
+PRD00487,Emina Fragrance 0487,Beauty,Fragrance,Emina,171812.09,247735.85
+PRD00488,Pond's Skincare 0488,Beauty,Skincare,Pond's,77254.51,106487.62
+PRD00489,L'Oreal Haircare 0489,Beauty,Haircare,L'Oreal,161806.17,187840.78
+PRD00490,Emina Haircare 0490,Beauty,Haircare,Emina,288275.35,340251.4
+PRD00491,Pond's Fragrance 0491,Beauty,Fragrance,Pond's,215246.63,301883.4
+PRD00492,Wardah Haircare 0492,Beauty,Haircare,Wardah,63049.62,79663.19
+PRD00493,Wardah Makeup 0493,Beauty,Makeup,Wardah,449661.11,564369.66
+PRD00494,Pond's Haircare 0494,Beauty,Haircare,Pond's,60593.05,82976.12
+PRD00495,Pond's Makeup 0495,Beauty,Makeup,Pond's,159972.44,215306.91
+PRD00496,Wardah Makeup 0496,Beauty,Makeup,Wardah,315746.96,373528.65
+PRD00497,Pond's Haircare 0497,Beauty,Haircare,Pond's,435765.25,584012.59
+PRD00498,L'Oreal Haircare 0498,Beauty,Haircare,L'Oreal,452069.25,671503.66
+PRD00499,Pond's Fragrance 0499,Beauty,Fragrance,Pond's,355021.57,549892.91
+PRD00500,Emina Haircare 0500,Beauty,Haircare,Emina,417040.44,487353.46

@@ -1,0 +1,993 @@
+# System Architecture — Nusantara Retail BI
+
+## 1. Overview
+
+**Nusantara Retail — Data Quality & Business Monitoring Dashboard** is an end-to-end Business Intelligence solution that combines:
+
+```text
+Business Performance Monitoring
+        +
+Data Reliability Monitoring
+```
+
+The technical architecture follows a layered data and analytics pipeline:
+
+```text
+Dataset Generation
+        ↓
+Raw CSV Dataset
+        ↓
+Data Quality Validation
+        ↓
+PostgreSQL
+├── raw
+├── staging
+├── warehouse
+└── quality
+        ↓
+Power BI Semantic Model
+        ↓
+DAX / KPI Layer
+        ↓
+Dashboard
+        ↓
+Insights & Recommendations
+```
+
+The architecture intentionally preserves data quality problems so they can be detected, measured, and traced rather than silently removed.
+
+For business context and requirements, see [Business Requirements](https://github.com/zoerlyx/nusantara-retail-bi-dashboard/blob/main/docs/business_requirements.md).
+
+For dataset and field definitions, see [Data Dictionary](https://github.com/zoerlyx/nusantara-retail-bi-dashboard/blob/main/docs/data_dictionary.md).
+
+For detailed DQ rule definitions, see [Data Quality Rules](https://github.com/zoerlyx/nusantara-retail-bi-dashboard/blob/main/docs/dq_rules.md).
+
+---
+
+## 2. End-to-End Architecture
+
+```text
+┌──────────────────────────────┐
+│    Dataset Design / Contract │
+│          Phase 2             │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│ Python Dataset Generator     │
+│ generate_dataset.py          │
+│ SEED = 2025                  │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│        RAW CSV DATA          │
+│                              │
+│ sales.csv                    │
+│ customers.csv                │
+│ products.csv                 │
+│ stores.csv                   │
+│ regions.csv                  │
+│ date.csv                     │
+└──────────────┬───────────────┘
+               │
+               ├────────────────────────┐
+               │                        │
+               ▼                        ▼
+┌─────────────────────────┐   ┌──────────────────────────┐
+│     DQ ENGINE           │   │       PostgreSQL         │
+│       Phase 3           │   │         Phase 4          │
+│                         │   │                          │
+│ 15 DQ Rules             │   │ raw → staging            │
+│ PASS / WARNING / FAIL   │   │       → warehouse        │
+│ source_row_id           │   │       → quality          │
+└────────────┬────────────┘   └────────────┬─────────────┘
+             │                             │
+             ▼                             │
+┌─────────────────────────┐                │
+│      data/quality/      │                │
+│                         │                │
+│ dq_result.csv           │────────────────┘
+│ dq_issue_detail.csv     │
+└─────────────────────────┘
+                                           │
+                                           ▼
+                              ┌──────────────────────────┐
+                              │   POWER BI SEMANTIC      │
+                              │          MODEL           │
+                              │         Phase 5          │
+                              │                          │
+                              │ Business Model           │
+                              │ Data Quality Model       │
+                              │ Conformed Date           │
+                              └────────────┬─────────────┘
+                                           │
+                                           ▼
+                              ┌──────────────────────────┐
+                              │        DAX / KPI         │
+                              │         Phase 6          │
+                              └────────────┬─────────────┘
+                                           │
+                                           ▼
+                              ┌──────────────────────────┐
+                              │       POWER BI REPORT    │
+                              │         Phase 7          │
+                              │                          │
+                              │ 01 Executive Overview    │
+                              │ 02 Data Health           │
+                              │ 03 Data Quality Details  │
+                              │ 04 Business Analysis     │
+                              └────────────┬─────────────┘
+                                           │
+                                           ▼
+                              ┌──────────────────────────┐
+                              │   PORTFOLIO / DOCUMENTS  │
+                              │         Phase 8          │
+                              └──────────────────────────┘
+```
+
+---
+
+## 3. Phase 2 — Synthetic Dataset Architecture
+
+### 3.1 Dataset Source of Truth
+
+The dataset is generated by:
+
+```text
+generate_dataset.py
+```
+
+using:
+
+```text
+SEED = 2025
+```
+
+`generate_dataset.py` is the source of truth for:
+
+- dataset structure;
+- generated master and transaction data;
+- intentional DQ injections;
+- deterministic reproduction of the Phase 2 dataset.
+
+All subsequent phases must remain compatible with this generated dataset.
+
+---
+
+### 3.2 Dataset Volume
+
+```text
+fact_sales   = 100,000 physical rows
+dim_customer = 15,000
+dim_product  = 500
+dim_store    = 30
+dim_region   = 8
+dim_date     = 365
+```
+
+Business period:
+
+```text
+2025-01-01 → 2025-12-31
+```
+
+---
+
+### 3.3 Raw Dataset Files
+
+```text
+data/raw/
+
+├── sales.csv
+├── customers.csv
+├── products.csv
+├── stores.csv
+├── regions.csv
+└── date.csv
+```
+
+The six generated CSV files form the Phase 2 source dataset used by later processing stages.
+
+---
+
+### 3.4 Intentional Data Quality Evidence
+
+The generator intentionally produces quality problems corresponding to the project's DQ framework, including:
+
+```text
+Missing customer IDs
+Missing product IDs
+Missing transaction dates
+Invalid quantities
+Invalid unit prices
+Invalid discounts
+Invalid payment methods
+Orphan customer references
+Orphan product references
+Store-region mismatches
+Incorrect sales amounts
+Duplicate transaction IDs
+Completed orders with non-positive amounts
+Abnormal sales amounts
+Out-of-period dates
+```
+
+Primary injection overlap is avoided through centralized index allocation.
+
+Natural secondary detections are allowed during DQ validation.
+
+---
+
+## 4. Phase 3 — Data Quality Engine
+
+The Data Quality Engine is implemented in:
+
+```text
+dq_engine.py
+```
+
+### 4.1 Processing Flow
+
+```text
+Raw CSV
+   ↓
+15 DQ Rules
+   ↓
+Record-level evaluation
+   ↓
+PASS / WARNING / FAIL
+   ↓
+Daily aggregation
+   ↓
+DQ Outputs
+```
+
+The DQ Engine reads the six Phase 2 CSV files and evaluates the complete rule set against the source data.
+
+Detailed DQ definitions, conditions, severities, and expected behavior are documented in [Data Quality Rules](https://chatgpt.com/c/dq_rules.md).
+
+---
+
+### 4.2 Record Traceability
+
+The engine generates:
+
+```text
+source_row_id
+```
+
+based on the physical source-row position.
+
+This is required because:
+
+```text
+transaction_id
+    ≠
+physical record identity
+```
+
+The distinction allows issue-level records to remain traceable even when transaction IDs are duplicated.
+
+---
+
+### 4.3 DQ Outputs
+
+```text
+data/quality/
+
+├── dq_result.csv
+└── dq_issue_detail.csv
+```
+
+#### `dq_result`
+
+Grain:
+
+```text
+one row per rule_id + result_date
+```
+
+This is the aggregated rule-monitoring output.
+
+#### `dq_issue_detail`
+
+Grain:
+
+```text
+physical record × DQ issue
+```
+
+This is the record-level issue output used for investigation and traceability.
+
+---
+
+### 4.4 Final DQ Validation
+
+The completed Phase 3 execution produced:
+
+```text
+15/15 DQ rules executed
+100,000 physical records checked
+Overall DQ Score = 99.35%
+
+dq_result rows       = 5,640
+dq_issue_detail rows = 9,738
+```
+
+Secondary detections remain visible where one injected defect causes additional rule failures.
+
+Verified examples:
+
+```text
+DQ-CS04
+Primary  = 700
+Detected = 2,200
+
+DQ-AC02
+Primary  = 300
+Detected = 1,338
+```
+
+These additional detections are natural consequences of interactions between injected data-quality problems.
+
+---
+
+## 5. Phase 4 — PostgreSQL Data Warehouse
+
+PostgreSQL is the central analytical storage layer.
+
+The local development instance is exposed at:
+
+```text
+localhost:15432
+```
+
+### 5.1 Schema Architecture
+
+```text
+PostgreSQL
+│
+├── raw
+├── staging
+├── warehouse
+└── quality
+```
+
+---
+
+### 5.2 Raw Layer
+
+The `raw` layer preserves the generated source data before analytical transformations.
+
+Tables:
+
+```text
+raw.sales
+raw.customers
+raw.products
+raw.stores
+raw.regions
+raw.date
+```
+
+The raw layer intentionally does not enforce constraints that would reject the injected quality problems.
+
+Its purpose is to preserve source evidence for validation.
+
+---
+
+### 5.3 Staging Layer
+
+The `staging` layer standardizes data representation before warehouse loading.
+
+Typical transformations include:
+
+```text
+TRIM whitespace
+NULL normalization
+DATE casting
+INTEGER casting
+NUMERIC casting
+BOOLEAN casting
+Text normalization
+```
+
+The staging layer does **not** silently repair business-quality issues.
+
+For example:
+
+```text
+Raw:
+quantity = -5
+
+Staging:
+quantity = -5
+```
+
+The invalid business value remains available for DQ validation.
+
+---
+
+### 5.4 Warehouse Layer
+
+The `warehouse` schema contains the analytical star schema:
+
+```text
+warehouse
+
+├── fact_sales
+├── dim_date
+├── dim_customer
+├── dim_product
+├── dim_store
+└── dim_region
+```
+
+#### Business Star Schema
+
+```text
+                         dim_date
+                            │
+                            ▼
+dim_customer ───────── fact_sales ───────── dim_product
+                            ▲
+                            │
+                        dim_store
+                            ▲
+                            │
+                        dim_region
+```
+
+#### Fact Table Key Design
+
+`warehouse.fact_sales` uses:
+
+```text
+sales_key BIGSERIAL PRIMARY KEY
+```
+
+as its technical warehouse key.
+
+`transaction_id` is intentionally not unique because duplicate transaction IDs are part of the DQ evidence.
+
+Therefore:
+
+```text
+sales_key
+    ↓
+Technical warehouse row identity
+
+transaction_id
+    ↓
+Business transaction identifier
+```
+
+---
+
+### 5.5 Quality Layer
+
+The `quality` schema stores the analytical DQ model:
+
+```text
+quality
+
+├── dim_dq_rule
+├── dq_result
+└── dq_issue_detail
+```
+
+The quality layer is kept separate from the business fact/dimension model so that DQ monitoring can be analyzed independently while remaining connectable to business reporting through the semantic layer.
+
+---
+
+### 5.6 Database Validation
+
+The final PostgreSQL validation confirmed:
+
+```text
+raw.sales                 = 100,000
+warehouse.fact_sales      = 100,000
+quality.dim_dq_rule       = 15
+dq_result IDs             = unique
+source_row_id             = populated
+duplicate transaction IDs = 300
+duplicate physical rows   = 600
+```
+
+The intentional DQ evidence remains preserved through the database pipeline.
+
+---
+
+## 6. Phase 5 — Power BI Semantic Model
+
+Power BI consumes only the analytical PostgreSQL schemas:
+
+```text
+warehouse.*
+quality.*
+```
+
+The following schemas are excluded from the report model:
+
+```text
+raw
+staging
+```
+
+---
+
+### 6.1 Business Model
+
+```text
+dim_date      1 → * fact_sales
+
+dim_customer  1 → * fact_sales
+
+dim_product   1 → * fact_sales
+
+dim_store     1 → * fact_sales
+
+dim_region    1 → * dim_store
+```
+
+All business relationships are:
+
+```text
+1 : *
+Single Direction
+Active
+```
+
+---
+
+### 6.2 Data Quality Model
+
+```text
+dim_date      1 → * dq_result
+
+dim_date      1 → * dq_issue_detail
+
+dim_dq_rule   1 → * dq_result
+
+dim_dq_rule   1 → * dq_issue_detail
+```
+
+These relationships are also modeled as:
+
+```text
+1 : *
+Single Direction
+Active
+```
+
+---
+
+### 6.3 Conformed Date Dimension
+
+`dim_date` functions as the conformed date dimension across business and quality analysis.
+
+It is shared by:
+
+```text
+fact_sales
+dq_result
+dq_issue_detail
+```
+
+This allows business performance and data quality to be analyzed along the same timeline.
+
+---
+
+### 6.4 Deliberately Avoided Physical Relationships
+
+The following direct Power BI relationships are intentionally not created:
+
+```text
+fact_sales ↔ dq_result
+
+fact_sales ↔ dq_issue_detail
+
+dq_result ↔ dq_issue_detail
+```
+
+Business-to-DQ cross-analysis is handled through DAX virtual relationships where required.
+
+This prevents unnecessary physical relationships between the business fact model and the DQ issue model.
+
+---
+
+## 7. Phase 6 — DAX / KPI Layer
+
+Business logic is centralized in a dedicated Power BI measures table:
+
+```text
+MEASURES
+```
+
+with the conceptual organization:
+
+```text
+MEASURES
+├── Business
+├── Data Quality
+└── Reliability
+```
+
+The semantic layer is responsible for centralized KPI calculation rather than independent calculations inside individual visuals.
+
+The detailed KPI definitions and business interpretation are maintained in [Business Requirements](https://github.com/zoerlyx/nusantara-retail-bi-dashboard/blob/main/docs/business_requirements.md).
+
+---
+
+### 7.1 Business Measures
+
+The model contains measures for:
+
+```text
+Revenue
+Orders
+Customers
+AOV
+Revenue Previous Month
+Revenue Growth %
+Orders Previous Month
+Order Growth %
+```
+
+---
+
+### 7.2 Data Quality Measures
+
+The model contains measures for:
+
+```text
+Total Rule Checks
+Passed Rule Checks
+Failed Rule Checks
+Warning Rule Checks
+Failure Rate %
+Warning Rate %
+Rule DQ Score %
+Overall DQ Score %
+Data Health Status
+Critical Failed Rule Checks
+Critical Failure Rate %
+```
+
+---
+
+### 7.3 Reliability Measures
+
+The model contains measures for:
+
+```text
+Data Reliability
+Affected Transactions
+Affected Records
+Affected Transaction Rate %
+Affected Revenue
+Affected Revenue Rate %
+```
+
+---
+
+### 7.4 Metric Semantics
+
+The model explicitly distinguishes:
+
+```text
+Rule Checks
+    ≠
+Business Records
+```
+
+It also distinguishes:
+
+```text
+Affected Transactions
+    =
+Distinct transaction_id values with DQ issues
+
+Affected Records
+    =
+Distinct source_row_id values with DQ issues
+```
+
+The Overall DQ Score is a project-defined severity-weighted metric.
+
+The validated full-period score is:
+
+```text
+99.35%
+```
+
+---
+
+## 8. Phase 7 — Dashboard Architecture
+
+The final Power BI report contains four pages:
+
+```text
+01 — Executive Overview
+02 — Data Health
+03 — Data Quality Details
+04 — Business Analysis
+```
+
+The architecture separates executive monitoring from detailed investigation and business exploration.
+
+---
+
+### 8.1 Executive Overview
+
+Primary purpose:
+
+```text
+Business performance
++
+Data reliability context
+```
+
+The page combines business KPIs with data-health and reliability indicators.
+
+---
+
+### 8.2 Data Health
+
+Primary purpose:
+
+```text
+Overall data-quality monitoring
+```
+
+The page presents aggregate quality status, trends, dimensions, severities, and failing rules.
+
+---
+
+### 8.3 Data Quality Details
+
+Primary purpose:
+
+```text
+Record-level DQ investigation
+```
+
+The page provides rule and issue analysis with filtering and drill-through capabilities.
+
+---
+
+### 8.4 Business Analysis
+
+Primary purpose:
+
+```text
+Business performance exploration
+```
+
+The page provides analysis across the available business dimensions and reporting periods.
+
+Detailed dashboard business requirements are maintained in [Business Requirements](https://github.com/zoerlyx/nusantara-retail-bi-dashboard/blob/main/docs/business_requirements.md).
+
+---
+
+## 9. Final Repository Structure
+
+```text
+nusantara-retail-bi-dashboard/
+
+│
+├── data/
+│   ├── raw/
+│   └── quality/
+│
+├── database/
+│   ├── 1_schemas.sql
+│   ├── 2_raw_tables.sql
+│   ├── 3_staging_tables.sql
+│   ├── 4_warehouse_tables.sql
+│   ├── 5_quality_tables.sql
+│   └── load_postgres.py
+│
+├── powerbi/
+│   ├── dashboard.pbix
+│   └── screenshots/
+│
+├── docs/
+│   ├── architecture.md
+│   ├── business_requirements.md
+│   ├── data_dictionary.md
+│   └── dq_rules.md
+│
+├── generate_dataset.py
+├── dq_engine.py
+├── docker-compose.yml
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 10. End-to-End Data Flow
+
+```text
+Dataset Contract
+        ↓
+Synthetic Data Generator
+        ↓
+Raw CSV
+        ↓
+        ├──────────────→ Data Quality Engine
+        │                       ↓
+        │                  DQ Outputs
+        │                       ↓
+        └──────────────→ PostgreSQL
+                                ↓
+                       raw → staging
+                                ↓
+                           warehouse
+                                ↓
+                            quality
+                                ↓
+                     Power BI Semantic Model
+                                ↓
+                           DAX / KPI
+                                ↓
+                       4 Dashboard Pages
+                                ↓
+                       Verified Insights
+                                ↓
+                    Portfolio / CV / GitHub
+```
+
+---
+
+## 11. Architecture Principles
+
+### 11.1 Source of Truth
+
+```text
+generate_dataset.py
+```
+
+defines the Phase 2 dataset contract and intentional DQ injections.
+
+Later processing stages must remain compatible with that source definition.
+
+---
+
+### 11.2 Preserve DQ Evidence
+
+Invalid, inconsistent, anomalous, and duplicate records are preserved so quality problems can be:
+
+```text
+Detected
+Measured
+Investigated
+Traced
+Communicated
+```
+
+The pipeline does not silently remove bad data merely to produce cleaner reporting output.
+
+---
+
+### 11.3 Layered Data Architecture
+
+```text
+Raw
+ ↓
+Staging
+ ↓
+Warehouse
+ ↓
+Quality
+```
+
+Each layer has a distinct responsibility.
+
+```text
+raw
+→ preserve source data
+
+staging
+→ standardize representation
+
+warehouse
+→ provide analytical business model
+
+quality
+→ provide analytical DQ model
+```
+
+---
+
+### 11.4 Separate Analytical Responsibilities
+
+The semantic model separates:
+
+```text
+Business Performance
++
+Data Quality
++
+Data Reliability
+```
+
+while allowing controlled cross-analysis through the Power BI semantic layer.
+
+---
+
+### 11.5 Semantic KPI Layer
+
+Business and monitoring logic is centralized in DAX measures.
+
+```text
+Business Requirement
+        ↓
+KPI Definition
+        ↓
+DAX Measure
+        ↓
+Dashboard Visual
+```
+
+This prevents individual visuals from implementing conflicting KPI calculations.
+
+---
+
+### 11.6 Traceability
+
+`source_row_id` preserves physical-row traceability for DQ issues.
+
+This is particularly important when:
+
+```text
+transaction_id
+```
+
+is not unique.
+
+The distinction is therefore:
+
+```text
+transaction_id
+    =
+Business identifier
+
+source_row_id
+    =
+Physical source record identifier
+```
+
+---
+
+### 11.7 Validation Before Progression
+
+Each major implementation phase is validated against the outputs and contracts established by preceding phases.
+
+The completed pipeline preserves intentional DQ evidence from generation through database storage and Power BI analysis.
+
+---
+
+
+## 12. Core Architecture Outcome
+
+```text
+Source Data
+    ↓
+Quality Validation
+    ↓
+Layered Data Warehouse
+    ↓
+Semantic Model
+    ↓
+Centralized KPI Logic
+    ↓
+Business + Data Reliability Analysis
+    ↓
+Decision-ready Business Intelligence
+```
+
+> **A business KPI is only as trustworthy as the quality of the data behind it.**

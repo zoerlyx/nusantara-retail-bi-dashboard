@@ -1,0 +1,31 @@
+store_id,store_name,region_id,city,store_type,opening_date
+STR001,Nusantara Flagship Pematangsiantar,REG001,Pematangsiantar,Flagship,2020-03-11
+STR002,Nusantara Outlet Jakarta Barat,REG002,Jakarta Barat,Outlet,2022-11-11
+STR003,Nusantara Flagship Depok,REG003,Depok,Flagship,2022-06-12
+STR004,Nusantara Outlet Magelang,REG004,Magelang,Outlet,2021-05-13
+STR005,Nusantara Standard Surabaya,REG005,Surabaya,Standard,2018-12-18
+STR006,Nusantara Flagship Bontang,REG006,Bontang,Flagship,2019-04-02
+STR007,Nusantara Outlet Parepare,REG007,Parepare,Outlet,2024-08-12
+STR008,Nusantara Standard Gianyar,REG008,Gianyar,Standard,2023-08-06
+STR009,Nusantara Outlet Medan,REG001,Medan,Outlet,2019-09-12
+STR010,Nusantara Outlet Jakarta Timur,REG002,Jakarta Timur,Outlet,2022-06-23
+STR011,Nusantara Outlet Bandung,REG003,Bandung,Outlet,2021-08-31
+STR012,Nusantara Standard Yogyakarta,REG004,Yogyakarta,Standard,2024-10-26
+STR013,Nusantara Standard Kediri,REG005,Kediri,Standard,2018-05-16
+STR014,Nusantara Outlet Bontang,REG006,Bontang,Outlet,2022-09-03
+STR015,Nusantara Outlet Gowa,REG007,Gowa,Outlet,2024-03-01
+STR016,Nusantara Flagship Denpasar,REG008,Denpasar,Flagship,2018-02-27
+STR017,Nusantara Standard Binjai,REG001,Binjai,Standard,2024-12-04
+STR018,Nusantara Outlet Jakarta Timur,REG002,Jakarta Timur,Outlet,2023-12-06
+STR019,Nusantara Standard Bogor,REG003,Bogor,Standard,2020-12-21
+STR020,Nusantara Outlet Semarang,REG004,Semarang,Outlet,2024-10-08
+STR021,Nusantara Flagship Surabaya,REG005,Surabaya,Flagship,2024-05-15
+STR022,Nusantara Standard Balikpapan,REG006,Balikpapan,Standard,2018-10-03
+STR023,Nusantara Standard Makassar,REG007,Makassar,Standard,2022-12-17
+STR024,Nusantara Flagship Gianyar,REG008,Gianyar,Flagship,2018-05-02
+STR025,Nusantara Flagship Tebing Tinggi,REG001,Tebing Tinggi,Flagship,2024-05-04
+STR026,Nusantara Outlet Jakarta Selatan,REG002,Jakarta Selatan,Outlet,2020-06-04
+STR027,Nusantara Outlet Depok,REG003,Depok,Outlet,2019-07-14
+STR028,Nusantara Flagship Semarang,REG004,Semarang,Flagship,2019-11-18
+STR029,Nusantara Standard Kediri,REG005,Kediri,Standard,2018-01-10
+STR030,Nusantara Outlet Bontang,REG006,Bontang,Outlet,2023-10-17
